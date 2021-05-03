@@ -1,0 +1,2 @@
+<app-header [locationSite]="(forcast$ | async)?.location" ></app-header>
+<app-main-layout [currentForcast]="(forcast$ | async)?.current"></app-main-layout>

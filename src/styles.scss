@@ -1,0 +1,93 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  font-weight: 100;
+}
+:root {
+  --size: 20;
+}
+body {
+  color: #fff;
+  height: 100vh;
+  font-family: system-ui;
+  padding: 0px;
+  margin: 0px;
+}
+.container {
+  text-align: center;
+}
+app-main-layout {
+    min-height: 67vh;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 2% 0;
+    align-items: center;
+}
+app-root {
+  background: #af71f2;
+  background: -moz-linear-gradient(
+    top,
+    #af71f2 0%,
+    #991594 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #af71f2 0%,
+    #991594 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #af71f2 0%,
+    #991594 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#af71f2', endColorstr='#991594',GradientType=0 ); /* IE6-9 */
+  width: 60%;
+  margin: 0 auto;
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  padding: .41%;
+}
+.temp {
+  position: relative;
+  display: inline-block;
+  &::after {
+    content: "o";
+    font-size: 0.7rem;
+    position: absolute;
+    top: -2px;
+    right: -7px;
+  }
+  &::before{
+    content: "c";
+    font-size: 1.4rem;
+    position: absolute;
+    bottom: 4%;
+    right: -42%;
+  }
+}
+.center {
+  text-align: center;
+}
+.cursor{
+    cursor: pointer;
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.flex-coloumn {
+  flex-flow: wrap column;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.ml2 {
+  margin-left: 2%;
+}
+.mr2 {
+  margin-right: 2%;
+}

@@ -1,0 +1,50 @@
+h2,
+h4 {
+  margin: 1px;
+  padding: 1px;
+}
+header {
+  position: relative;
+}
+.btn {
+  position: absolute;
+  top: 0px;
+  right: 2px;
+  font-size: 3rem;
+  height: 40px;
+  width: 40px;
+  &::before {
+    content: "";
+    height: 70%;
+    position: absolute;
+    width: 1px;
+    background: #fff;
+    top: 15%;
+  }
+  &::after {
+    content: "";
+    width: 70%;
+    position: absolute;
+    height: 1px;
+    background: #fff;
+    top: 48%;
+    right: 13%;
+  }
+}
+
+.menu {
+  padding: 4px;
+  display: inline-block;
+  position: absolute;
+  left: 2px;
+  top: 3px;
+  width: 36px;
+  height: 36px;
+  span {
+    display: block;
+    height: 1px;
+    width: 80%;
+    background-color: #fff;
+    margin-bottom: 17%;
+  }
+}
